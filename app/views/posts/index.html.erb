@@ -1,2 +1,69 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="container main-content">
+    <div class="row">
+      <div class="col profile-col">
+  
+      </div>
+
+      <div class="col-6">
+        <% @users.each do |user| %>
+          <ul class="tweet-list">
+            <li class="tweet-card">
+              <div class="tweet-content">
+                <div class="tweet-header">
+                  <span class="fullname">
+                    <strong>Jaspreet</strong>
+                  </span>
+                  <span class="username">Jaspreet@gmail.com</span>
+                  <span class="tweet-time">- jan 15</span>
+                </div>
+                <a>
+                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                </a>
+                <div class="tweet-text pt-1 pb-1">
+                  <%= user.tweet %>
+                </div>
+                <div class="tweet-footer">
+                  <a class="tweet-footer-btn">
+                    <i class="icon-gray far fa-comment"></i><span> 18</span>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="icon-gray fas fa-retweet"></i><span> 64</span>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="icon-gray far fa-heart"></i></i><span> 202</span>
+                  </a>
+                  <a class="tweet-footer-btn">
+                    <i class="icon-gray fas fa-caret-down"></i></i><span> 155</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        <% end %>
+      </div>
+      <div class="col right-col">
+        <div class="content-panel">
+          <div class="panel-header">
+            <h4>Who to follow</h4><small><a href="">View all</a></small>
+          </div>
+          <div class="panel-content">
+            <ul class="tweet-list">
+              <li class="tweet-card">
+                <div class="tweet-content">
+                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                  <div class="tweet-header">
+                    <span class="fullname">
+                  <strong>Jon Vadillo</strong>
+                </span>
+                    <span class="username">@JonVadillo</span>
+                  </div>
+
+                  <button class="btn btn-follow">Follow</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
