@@ -1,0 +1,18 @@
+<div class="container pt-3 mt-5">
+  <div class="row justify-content-center ">
+    <div class="col-10 ">
+      <%= form_with(model: @post, class: "shadow p-3 mb-3 form rounded bg-primary", local: true) do |f| %>
+        <div class="form-group row">
+          <%= f.label :tweet, class: "col-2 col-form-label text-light font-weight-bold" %>
+          <div class="col-10"> 
+            <%= f.text_area :tweet, rows: 10, class: "form-control shadow rounded", placeholder: "What's happning?" %>
+          </div>
+        </div>
+        <div class="form-group row justify-content-end pr-3">
+          <%= f.submit 'Tweet', class: "btn btn-search-bar btn-lg" %>
+        </div>
+      <% end %>
+    </div>
+    <%= link_to '[ Cancel and return to home page ]', posts_path, class: "text-dark mb-3" %>
+  </div>
+</div> 
