@@ -1,0 +1,96 @@
+body {
+  background-color: #e6ecf0;
+  padding-top: 54px;
+}
+
+a {
+  color: #1DA1F2;
+}
+
+@media screen and (min-width: 1236px) {
+  .container {
+    width: 1190px;
+  }
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.navbar-nav > li a {
+  color: #66757f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-search {
+  font-size: 13px;
+}
+
+.input-search, .btn-search {
+  background-color: #f5f8fa;
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+}
+.btn-search {
+  background-color: #fff;
+}
+
+.navbar-search-icon {
+  color: #66757f;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: asset-url('admin.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-search-bar {
+  border-radius: 100px;
+  border: 1px solid #1da1f2;
+  color: #fff;
+  background-color: #4AB3F4;
+  border-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-search-bar:hover{
+      background-color: #1DA1F2;
+    border-color: #1DA1F2;
+  cursor:pointer;
+}
+
+.navbar-form {
+  margin-right: 15px;
+}
+
+.navbar-user-dropdown {
+  margin-right: 15px;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+  font-size: 40px;
+  border-radius: 50%;
+}
+
+.fa-twitter:hover{
+  background-color: rgb(194, 227, 248);
+  cursor:pointer;
+}
+
+.fa-home {
+  color: #1DA1F2;
+}
+
+.navbar-nav > li .home {
+  color: #1DA1F2;
+}
+
+
